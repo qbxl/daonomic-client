@@ -4,7 +4,6 @@ import { inject, observer } from 'mobx-react';
 import formatDate from '~/i18n/format-date';
 import TwoColumnsLayout from '~/components/two-columns-layout';
 import Panel from '@daonomic/ui/source/panel';
-import SaleTimeline from '~/components/sale-timeline';
 import Translation from '~/components/translation';
 import Heading from '~/components/heading';
 import Kyc from './components/kyc';
@@ -107,7 +106,6 @@ class BuyTokens extends Component {
       <TwoColumnsLayout.Right>
         <Balance />
         <TokenPrice />
-        <SaleTimeline />
       </TwoColumnsLayout.Right>
     </TwoColumnsLayout>
   );

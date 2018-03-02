@@ -148,19 +148,6 @@ export class PaymentStore {
         updateIssueRequestStatus();
       },
     );
-
-    reaction(
-      () => this.selectedMethodAddress,
-      (address) => {
-        if (address) {
-          generateQRCode(address).then((generatedQrCode) => {
-            runInAction(() => {
-              this.selectedMethodAddressQRCode = generatedQrCode;
-            });
-          });
-        }
-      },
-    );
   }
 
   @action
@@ -182,6 +169,12 @@ export class PaymentStore {
           this.dataState = dataStates.failed;
         });
       });
+
+    generateQRCode(sale).then((generatedQrCode) => {
+      runInAction(() => {
+        this.selectedMethodAddressQRCode = generatedQrCode;
+      });
+    });
   };
 
   @action

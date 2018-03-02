@@ -1,7 +1,7 @@
 // @flow
 
 const sales = {
-  development: '0x938a97375d6809f7fcd191139e6658d6a5109a48',
+  development: '0x57c1e3341aa84d44baf9b3ad92716ef22418f9e4',
   production: '0x99a09f0d85bc6e95e110348a8522f98443e31c4a',
 };
 
