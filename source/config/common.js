@@ -1,11 +1,12 @@
 // @flow
 
 const sales = {
-  development: '0x57c1e3341aa84d44baf9b3ad92716ef22418f9e4',
-  production: '0x99a09f0d85bc6e95e110348a8522f98443e31c4a',
+  development: '0xcb872dcc85ee14576a8c917d230ba00ca2f46150',
+  production: '0xcb872dcc85ee14576a8c917d230ba00ca2f46150',
 };
 
-export const realm = '5a7f5cf23f6b6b92b6fdd68a';
+export const realm = '5a8c1b2ec6bcce780d2e9e22';
 export const sale: string = sales[process.env.API] || sales.production;
-export const contactEmail = 'dev@0v1se.com';
-export const termsOfServiceURL = 'terms.url';
+export const contactEmail = 'support@trustwalletapp.com';
+export const termsOfServiceURL =
+  'https://trustwalletapp.com/assets/token_sale_terms.pdf';
